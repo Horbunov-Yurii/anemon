@@ -270,9 +270,6 @@ html {
   }
 }
 
-.about {
-  padding-bottom: 250px;
-}
 .about .container {
   background-image: url(../img/mobile/flower-mobile@1x.webp);
   background-repeat: no-repeat;
@@ -361,9 +358,92 @@ html {
   padding-top: 60px;
   padding-bottom: 60px;
 }
+@media screen and (min-width: 752px) {
+  .store {
+    padding-top: 100px;
+  }
+}
+@media screen and (min-width: 1264px) {
+  .store {
+    padding-top: 100px;
+  }
+}
 .store__title {
-  color: #000;
+  color: #000000;
   font-size: 24px;
   font-weight: 700;
   line-height: 1.208333333;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+@media screen and (min-width: 752px) {
+  .store__title {
+    gap: 16px;
+  }
+}
+.store__title::after {
+  content: " ";
+  width: 100%;
+  height: 1px;
+  background-color: #000000;
+  display: inline-block;
+}
+.store__list {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+@media screen and (min-width: 752px) {
+  .store__list {
+    margin-top: 60px;
+  }
+}
+@media screen and (min-width: 1264px) {
+  .store__list {
+    margin-top: 80px;
+  }
+}
+.store__image {
+  width: 136px;
+}
+@media screen and (min-width: 752px) {
+  .store__image {
+    width: 344px;
+  }
+}
+@media screen and (min-width: 1264px) {
+  .store__image {
+    width: 600px;
+  }
+}
+.store__button {
+  display: flex;
+  width: 208px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 38px;
+  padding: 14px 28px;
+  background: #E86F54;
+  margin-top: 32px;
+}
+@media screen and (min-width: 752px) {
+  .store__button {
+    margin-top: 60px;
+    line-height: 0.8571428571;
+    padding: 16px 32px;
+  }
+}
+.store__button:hover, .store__button:focus {
+  background: #E25B41;
 }/*# sourceMappingURL=main.css.map */
