@@ -10,6 +10,40 @@
     padding-top: 100px;
   }
 
+  &__list {
+    margin-top: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    @media screen and (min-width: 752px) {
+      margin-top: 60px;
+      gap: initial;
+      row-gap: 40px;
+      column-gap: 32px;
+    }
+
+    @media screen and (min-width: 1264px) {
+      margin-top: 80px;
+      row-gap: 64px;
+    }
+  }
+
+  &__item {
+    flex-basis: calc((100% - 16px) / 2);
+
+    @media screen and (min-width: 304px) {
+      flex-basis: calc((100% - 16px) / 2);
+    }
+
+    @media screen and (min-width: 752px) {
+      flex-basis: calc((100% - 32px) / 2);
+    }
+  }
+
+
   &__title {
     color: $text-color;
     font-size: 24px;
@@ -32,23 +66,6 @@
     display: inline-block;
   }
 
-  &__list {
-    margin-top: 32px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 16px;
-
-    @media screen and (min-width: 752px) {
-      margin-top: 60px;
-    }
-
-    @media screen and (min-width: 1264px) {
-      margin-top: 80px;
-    }
-  }
-
   &__image {
     width: 136px;
 
@@ -58,6 +75,59 @@
 
     @media screen and (min-width: 1264px) {
       width: 600px;
+    }
+  }
+
+  &__text {
+    color: $text-color;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+
+    @media screen and (min-width: 752px) {
+      font-size: 32px;
+      margin-top: 16px;
+      gap: 8px;
+    }
+
+    @media screen and (min-width: 1264px) {
+      font-size: 36px;
+      gap: 16px;
+    }
+  }
+
+  &__text::after {
+    content: " ";
+    display: none;
+
+    @media screen and (min-width: 752px) {
+      width: 100%;
+      height: 1px;
+      background-color:$text-color ;
+      display: inline-block;
+    }
+  }
+
+  &__desc {
+    color: $text-color;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.25;
+    opacity: 0.6;
+    margin-top: 6px;
+
+    
+    @media screen and (min-width: 752px) {
+      font-size: 24px;
+      margin-top: 8px;
+    }
+
+    @media screen and (min-width: 1264px) {
+      font-size: 28px;
+      margin-top: 4px;
     }
   }
 
@@ -77,6 +147,9 @@
     padding: 14px 28px;
     background: $accent-color;
     margin-top: 32px;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     @media screen and (min-width: 752px) {
       margin-top: 60px;
@@ -85,8 +158,12 @@
     }
   }
 
-  &__button:hover,
+  &__button:hover {
+    background-color: $hover-color;
+  }
+
   &__button:focus {
-    background: $hover-color;
+    background-color: #FA6F54;
+    box-shadow: 0px 4px 16px 0px rgba(250, 111, 84, 0.20);
   }
 }
