@@ -416,6 +416,8 @@ html {
 @media screen and (min-width: 752px) {
   .store__title {
     gap: 16px;
+    font-size: 44px;
+    line-height: 1.227272727;
   }
 }
 .store__title::after {
@@ -466,10 +468,15 @@ html {
 }
 @media screen and (min-width: 752px) {
   .store__text::after {
-    width: 100%;
+    width: 20%;
     height: 1px;
     background-color: #000000;
     display: inline-block;
+  }
+}
+@media screen and (min-width: 1264px) {
+  .store__text::after {
+    width: 47%;
   }
 }
 .store__desc {

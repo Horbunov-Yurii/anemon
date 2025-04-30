@@ -55,6 +55,8 @@
 
     @media screen and (min-width: 752px) {
       gap: 16px;
+      font-size: 44px;
+      line-height: 1.227272727;
     }
   }
 
@@ -104,10 +106,14 @@
     display: none;
 
     @media screen and (min-width: 752px) {
-      width: 100%;
+      width: 20%;
       height: 1px;
       background-color:$text-color ;
       display: inline-block;
+    }
+
+    @media screen and (min-width: 1264px) {
+      width: 47%;
     }
   }
 
