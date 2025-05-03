@@ -125,6 +125,16 @@
     }
   }
 
+  .other__size {
+    @media screen and (min-width: 752px) {
+      width: 119px;
+    }
+
+    @media screen and (min-width: 1264px) {
+      width: 340px;
+    }
+  }
+
   &__desc {
     color: $text-color;
     font-size: 12px;
