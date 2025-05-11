@@ -122,6 +122,11 @@ html {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.2;
+  transition-duration: 250ms;
+}
+.header__link:hover {
+  color: #E86F54;
+  text-shadow: 5px 5px 5px #000000, 7px 7px 7px #E86F54;
 }
 .header__phone {
   width: 22px;
@@ -232,7 +237,7 @@ html {
   }
 }
 .hero__title {
-  color: #000000;
+  color: transparent;
   text-align: center;
   font-size: 52px;
   font-style: normal;
@@ -243,6 +248,9 @@ html {
   left: 50%;
   transform: translateX(-50%);
   display: flex;
+  background-image: url(https://effects1.ru/gallery/GIF/Ogon/Plamya/kostyor-29.gif);
+  -webkit-background-clip: text;
+          background-clip: text;
 }
 @media screen and (min-width: 752px) {
   .hero__title {

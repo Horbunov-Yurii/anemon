@@ -50,6 +50,13 @@
     font-size: 20px;
     font-weight: 400;
     line-height: 1.2;
+    transition-duration: 250ms;
+
+  }
+  &__link:hover{
+    color: $accent-color;
+    text-shadow: 5px 5px 5px $text-color, 7px 7px 7px $accent-color;
+
   }
 
   &__phone {

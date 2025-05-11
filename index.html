@@ -12,7 +12,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
     integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./style/main.min.css" />
+  
 </head>
 <body>
   <header class="header">
@@ -32,10 +38,10 @@
             <a href="#store" class="header__link">Store</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link">Delivery</a>
+            <a href="#delivery" class="header__link">Delivery</a>
           </li>
           <li class="header__item">
-            <a href="#" class="header__link">Blog</a>
+            <a href="#blog" class="header__link">Blog</a>
           </li>
         </ul>
       </nav>
@@ -58,7 +64,7 @@
             <use href="./img/symbol-defs.svg#icon-circle-text"></use>
           </svg>
         </div>
-        <h1 class="hero__title">ANEMON<span class="hero__span">E</span><span class="hero__span1">Ē</span></h1>
+        <h1 class="animate__animated animate__fadeIn animate__slower	500ms animate__infinite	infinite hero__title">ANEMON<span class="hero__span">E</span><span class="hero__span1">Ē</span></h1>
       </div>
     </section>
     <section class="about" id="about">
@@ -73,7 +79,7 @@
       <div class="container">
         <h2 class="store__title">STORE</h2>
         <ul class="store__list">
-          <li class="store__item">
+          <li class="store__item"  data-aos="zoom-in-up">
             <picture>
               <source
                 srcset="./img/desktop/orange_flower-desktop@1x.webp 1x, ./img/desktop/orange_flower-desktop@2x.webp 2x"
@@ -92,7 +98,7 @@
             </div>
             <p class="store__desc">from $15</p>
           </li>
-          <li class="store__item">
+          <li class="store__item" data-aos="flip-left" data-aos-delay="50">
             <picture>
               <source
                 srcset="./img/desktop/whitebouquet-desktop@1x.webp 1x, ./img/desktop/whitebouquet-desktop@2x.webp 2x"
@@ -109,7 +115,7 @@
             </div>
             <p class="store__desc">from $25</p>
           </li>
-          <li class="store__item">
+          <li class="store__item" data-aos="fade-up-right" data-aos-duration="1000">
             <picture>
               <source
                 srcset="./img/desktop/bluebouquet-desktop@1x.webp 1x, ./img/desktop/bluebouquet-desktop@2x.webp 2x"
@@ -126,7 +132,7 @@
             </div>
             <p class="store__desc">from $45</p>
           </li>
-          <li class="store__item">
+          <li class="store__item" data-aos="flip-right" data-aos-mirror="true">
             <picture>
               <source
                 srcset="./img/desktop/yellowbouquet-desktop@1x.webp 1x, ./img/desktop/yellowbouquet-desktop@2x.webp 2x"
@@ -146,11 +152,11 @@
             <p class="store__desc">from $60</p>
           </li>
         </ul>
-        <button type="button" class="store__button">Order flowers</button>
+        <button type="button" class="store__button animate__infinite	infinite animate__hinge ">Order flowers</button>
       </div>
     </section>
 
-    <section class="delivery"> 
+    <section class="delivery" id="delivery"> 
       <div class="container">
         <h2 class="delivery__title">DELIVERY</h2>
         <ul class="delivery__list">
@@ -176,7 +182,7 @@
       </div>
     </section>
 
-    <section class="blog">
+    <section class="blog" id="blog">
       <div class="container">
         <h2 class="blog__title">BLOG</h2>
         <ul class="blog__list">
@@ -267,5 +273,9 @@
       </ul>
     </div>
   </footer>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
